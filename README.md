@@ -68,15 +68,15 @@ Although developed for personal learning, the methodology and backtesting proces
 Run on final trading day of the month after 4p.m ET.
 
 ## Learning Objectives
-API-based data acquisition
-Portfolio performance metrics calculation
-Rule-based investment strategy design
-Automation of recurring tasks
+-API-based data acquisition  
+-Portfolio performance metrics calculation  
+-Rule-based investment strategy design  
+-Automation of recurring tasks  
 
 ## To-do
--- **Killswitch**
--- **Issues with backtester before '2016-02-29'**
--- **Multi-signal approach**
+- **Killswitch**  
+- **Issues with backtester before '2016-02-29'**  
+- **Multi-signal approach**  
 
 ## Disclaimer
 This project is for educational purposes only. It is not financial advice, and past performance is not indicative of future results.
