@@ -46,12 +46,11 @@ ALPACA_BASE_URL=https://paper-api.alpaca.markets
 
 4.) Run the API checker and the backtest (with startdate of your choice).
 Sample Results
-(Backtest from 2010-01-01 to 2025-08-08)
+(Backtest from 2023-01-01 to 2025-08-07)
 
---- Strategy Performance ---
-CAGR: 13.76%
-Volatility: 17.69%
-Sharpe Ratio: 0.99
+CAGR: 17.39%
+Volatility: 15.95%
+Sharpe Ratio: 1.29
 
 ## Learning Objectives
 API-based data acquisition
