@@ -37,8 +37,11 @@ Although developed for personal learning, the methodology and backtesting proces
 pip install -r requirements.txt
 
 3.) Create a .env file that contains your Alpaca API keys. Sample below:
+
 ALPACA_API_KEY_ID=your_key
+
 ALPACA_API_SECRET_KEY=your_secret
+
 ALPACA_BASE_URL=https://paper-api.alpaca.markets
 
 4.) Run the API checker and the backtest (with startdate of your choice).
