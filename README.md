@@ -23,22 +23,24 @@ Although developed for personal learning, the methodology and backtesting proces
 - **Python 3**
 - **Pandas / NumPy** – Data handling & calculations
 - **Alpaca API** – Historical price data and order management
+  -  Create account/sign up for Alpaca API and paper trading on https://alpaca.markets/.
+  -  On the home page, generate your API keys. These will go into your .env file.
 - **Matplotlib** – Performance visualization
 - **dotenv** – Secure API key storage
 - **Cron Jobs** – Automated monthly execution
 
 ## How to Run
 
-**1. Clone this repository**
+1. Clone this repository
    ```bash
    git clone https://github.com/YOURUSERNAME/spy-qqq-rotation-strategy.git
    cd spy-qqq-rotation-strategy
    ```
-**2.) Install dependencies:**
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-**3.) Create a .env file that contains your Alpaca API keys. Sample below:**
+3. Create a .env file that contains your Alpaca API keys. Sample below:
    ```bash
    ALPACA_API_KEY_ID=your_key
 
@@ -46,13 +48,24 @@ Although developed for personal learning, the methodology and backtesting proces
 
    ALPACA_BASE_URL=https://paper-api.alpaca.markets
    ```
-**4.) Run the API checker and the backtest (with startdate of your choice).**
+4. Run the API checker and the backtest (with startdate of your choice).
+   ``` bash
+   python api_checker.py
+   ```
+   ``` bash
+   python backtester.py
+   ```
+   
    Sample Results
+   
    (Backtest from 2023-01-01 to 2025-08-07)
 
    CAGR: 17.39%
    Volatility: 15.95%
    Sharpe Ratio: 1.29
+5. Trade execution.
+**Optional: Schedule in cron**
+Run on final trading day of the month after 4p.m ET.
 
 ## Learning Objectives
 API-based data acquisition
