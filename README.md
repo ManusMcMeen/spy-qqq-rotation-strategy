@@ -34,16 +34,17 @@ Although developed for personal learning, the methodology and backtesting proces
    cd spy-qqq-rotation-strategy
 
 2.) Install dependencies:
+   ```bash
 pip install -r requirements.txt
-
+   ```
 3.) Create a .env file that contains your Alpaca API keys. Sample below:
-
+   ```bash
 ALPACA_API_KEY_ID=your_key
 
 ALPACA_API_SECRET_KEY=your_secret
 
 ALPACA_BASE_URL=https://paper-api.alpaca.markets
-
+   ```
 4.) Run the API checker and the backtest (with startdate of your choice).
 Sample Results
 (Backtest from 2023-01-01 to 2025-08-07)
@@ -59,9 +60,9 @@ Rule-based investment strategy design
 Automation of recurring tasks
 
 ## To-do
-Killswitch
-Issues with backtester before '2016-02-29'
-Multi-signal approach
+-- ** Killswitch **
+-- **Issues with backtester before '2016-02-29' **
+-- ** Multi-signal approach **
 
 ## Disclaimer
 This project is for educational purposes only. It is not financial advice, and past performance is not indicative of future results.
