@@ -86,7 +86,6 @@ def backtest_strategy(prices, choice_series, risk_free_rate):
         elif date in monthly_returns.index and choice in monthly_returns.columns:
             strategy_returns.append(monthly_returns.loc[date, choice])
         else:
-            print(f"Missing data for date {date} and choice {choice}")
             strategy_returns.append(np.nan)
 
     strategy_returns = pd.Series(strategy_returns, index=choice_series.index, name='strategy_return').dropna()
@@ -105,12 +104,13 @@ def backtest_strategy(prices, choice_series, risk_free_rate):
 
     print("Strategy window:", strategy_returns.index.min().date(), "->", strategy_returns.index.max().date())
     print("n months:", strategy_returns.shape[0])
-    # cumulative.plot(title='Strategy Cumulative Return', figsize=(10, 5))
-    # plt.xlabel('Date')
-    # plt.ylabel('Cumulative Return')
-    # plt.grid(True)
-    # plt.tight_layout()
-    # plt.show()
+    cumulative.plot(title='Strategy Cumulative Return', figsize=(10, 5))
+    plt.xlabel('Date')
+    plt.ylabel('Cumulative Return')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
 # Main
 if __name__ == '__main__':
     api = get_api()
